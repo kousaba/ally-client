@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "ally-client",
+	"version": "1.0.0",
+	"name": "Ally Client",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ally-client/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.allyclient.AllyClient"
+		],
+		"client": [
+			"com.allyclient.AllyClientClient"
+		]
+	},
+	"mixins": [
+		"ally-client.mixins.json",
+		{
+			"config": "ally-client.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.3",
+		"minecraft": "~1.21.11",
+		"java": ">=21"
+	}
+}

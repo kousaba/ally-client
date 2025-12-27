@@ -1,0 +1,17 @@
+{
+	"required": true,
+	"package": "com.allyclient.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"ExampleClientMixin",
+		"InGameHudMixin",
+		"MinecraftClientMixin",
+		"LightmapTextureManagerMixin",
+		"GameRendererMixin",
+		"ClientWorldMixin",
+		"WorldRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
